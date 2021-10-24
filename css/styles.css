@@ -1,0 +1,13 @@
+body {
+  padding: 0;
+  margin: 0;
+  background-image: radial-gradient(rgb(65, 65, 65) 2px, transparent 2px);
+  background-size: 30px 30px;
+}
+.titulo {
+  background-color: white;
+}
+.nav-item {
+  margin: 5px;
+  font-size: large;
+}
