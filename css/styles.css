@@ -1,7 +1,6 @@
 body {
   padding: 0;
   margin: 0;
-  background-image: radial-gradient(rgb(65, 65, 65) 2px, transparent 2px);
   background-size: 30px 30px;
 }
 .titulo {
@@ -10,4 +9,16 @@ body {
 .nav-item {
   margin: 5px;
   font-size: large;
+}
+.boxForm {
+  border-radius: 3px;
+  margin: 20px auto;
+  width: 190px;
+  background-color: #0D6EFD;
+  padding: 5px;
+}
+.generador{
+  display: block;
+  margin:auto;
+  padding: 10px;
 }
