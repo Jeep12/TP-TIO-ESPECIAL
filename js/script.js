@@ -73,10 +73,15 @@ btnBuscar.addEventListener("click", function(event){
     if (inputNumber != '') {
         divFrase.innerHTML = frases[inputNumber];
     } else {
-        divFrase.innerHTML = "Tiene los campos vacios"
+        divFrase.innerHTML = "Tiene los campos vacios";
     }
 });
 
+let lista = document.getElementById("listaFrases");
+
+for (let i = 0;i<frases.length;i++){
+    lista.innerHTML+="<li>"+"Posicion: "+[i]+" "+frases[i]+"</li>";
+}
 
 
 
