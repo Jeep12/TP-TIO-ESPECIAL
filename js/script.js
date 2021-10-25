@@ -64,7 +64,7 @@ var frases = ["Es una loca no asumida, que no hay nada peor",
 btnFraseRandom.addEventListener("click", function(event){
     event.preventDefault();
     let aleatorio = Math.floor(Math.random() * frases.length);
-    divFrase.innerHTML = frases[aleatorio];
+    divFrase.innerHTML = "Posicion: " +[aleatorio]+" "+frases[aleatorio];
 });
 
 btnBuscar.addEventListener("click", function(event){
