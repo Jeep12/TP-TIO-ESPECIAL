@@ -1,6 +1,7 @@
 let btnFraseRandom = document.querySelector("#btn-generar");
 let btnBuscar = document.querySelector("#btn-buscar");
 let divFrase = document.querySelector("#frase");
+let form = document.querySelector("#form");
 var frases = ["Es una loca no asumida, que no hay nada peor",
 
 "LANATA me critica la vestimenta a mi que el día de la tapa de gente parecía que se había morfado a sopapo y milanesa",
@@ -59,12 +60,29 @@ var frases = ["Es una loca no asumida, que no hay nada peor",
 
 "Asi que no me vengan a joder con hacerse las santas y dejate de joder VOS conmigo, colgate de patolandia que trabajas con ella no de mi"];
 
-btnFraseRandom.addEventListener("onclick", mostrarFraseRandom());
+form.addEventListener("submit", asd);
+btnFraseRandom.addEventListener("click", mostrarFraseRandom);
 
-function mostrarFraseRandom(){
+function asd (e){
+    e.preventDefault();
+    mostrarFraseBuscada();
+}
+
+function mostrarFraseRandom(e){
+    console.log("a");
     divFrase.innerHTML = seleccionarFraseRandom();
 }
 
 function seleccionarFraseRandom(){ 
     return frases[Math.floor(Math.random()*frases.length)]
+}
+
+function mostrarFraseBuscada(){
+    divFrase.innerHTML = buscarFrase();
+}
+
+function buscarFrase(){
+    let numero = document.querySelector("#numFrase").value;
+    console.log(numero);
+    return frases [numero-1];
 }
