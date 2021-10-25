@@ -22,3 +22,13 @@ body {
   margin:auto;
   padding: 10px;
 }
+.containerAbout {
+  text-align: center;
+}
+.containerAbout >p {
+  width: 300px;
+  background-color:#0D6EFD;
+  border-radius: 3px;
+  color: white; 
+  margin: auto;
+}
